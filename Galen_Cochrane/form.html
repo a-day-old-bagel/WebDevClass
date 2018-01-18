@@ -1,0 +1,93 @@
+<!-- - - - - - - - - - - - - - - - - - - - -
+Galen Cochrane
+January 17 2018
+INFO 2220
+Jon Holmes
+Assignment 1 – Part 3
+Purpose: This page contains a simple form
+- - - - - - - - - - - - - - - - - - - - - - -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Form</title>
+	<link href="favicon.ico" rel="shortcut icon" />
+</head>
+<body>
+	<article>
+		<h1>Form</h1>
+		<form action="http://teaching.jdholmes.net/postvget/reader/index.php" method="post" id="form">
+
+			<input type="hidden" name="StudentID" value="860360">
+
+			<label for="txtFirstName">First Name:</label>
+			<input type="text" name="firstName" id="txtFirstName">
+
+			<label for="txtLastName">Last Name:</label>
+			<input type="text" name="lastName" id="txtLastName">
+
+			<label for="txtSecret">Secret Key:</label>
+			<input type="password" name="secret" id="txtSecret">
+
+			<label for="selColor">Favorite Color:</label>
+			<select name="favColor" id="selColor">
+				<option value="Black">Black</option>
+				<option value="White">White</option>
+				<option value="Red" selected>Red</option>
+				<option value="Green">Green</option>
+				<option value="Blue">Blue</option>
+				<option value="Cyan">Cyan</option>
+				<option value="Magenta">Magenta</option>
+				<option value="Yellow">Yellow</option>
+			</select>
+
+			<fieldset> <legend>Day of the Week</legend>
+				<input type="radio" name="dayOfWeek" value="Sunday" id="rdDaySun">
+				<label for="rdDaySun">Sunday</label>
+
+				<input type="radio" name="dayOfWeek" value="Monday" id="rdDayMon">
+				<label for="rdDayMon">Monday</label>
+
+				<input type="radio" name="dayOfWeek" value="Tuesday" id="rdDayTue">
+				<label for="rdDayTue">Tuesday</label>
+
+				<input type="radio" name="dayOfWeek" value="Wednesday" id="rdDayWed">
+				<label for="rdDayWed">Wednesday</label>
+
+				<input type="radio" name="dayOfWeek" value="Thursday" id="rdDayThu">
+				<label for="rdDayThu">Thursday</label>
+
+				<input type="radio" name="dayOfWeek" value="Friday" id="rdDayFri" checked>
+				<label for="rdDayFri">Friday</label>
+
+				<input type="radio" name="dayOfWeek" value="Saturday" id="rdDaySat">
+				<label for="rdDaySat">Saturday</label>
+			</fieldset>
+
+			<fieldset> <legend>Times</legend>
+				<input type="checkbox" name="timeOfDay11" value="11" id="chkTime11">
+				<label for="chkTime11">11:00 AM</label>
+
+				<input type="checkbox" name="timeOfDay12" value="12" id="chkTime12">
+				<label for="chkTime12">12:00 AM</label>
+
+				<input type="checkbox" name="timeOfDay13" value="13" id="chkTime13">
+				<label for="chkTime13">1:00 PM</label>
+
+				<input type="checkbox" name="timeOfDay14" value="14" id="chkTime14">
+				<label for="chkTime14">2:00 PM</label>
+
+				<input type="checkbox" name="timeOfDay15" value="15" id="chkTime15">
+				<label for="chkTime15">3:00 PM</label>
+			</fieldset>
+
+			<label for="txtAreaDesc">Description:</label>
+			<textarea name="description" rows="5" cols="20" id="txtAreaDesc"></textarea>
+
+			<input type="submit" value="Send to Server">
+
+		</form>
+	</article>
+</body>
+</html>
