@@ -1,0 +1,76 @@
+/***************************************
+ * Galen Cochrane
+ * January 27 2018
+ * INFO 2220
+ * Jon Holmes
+ * Assignment 2
+ * First External Style Sheet
+ * This is applied to all pages
+ **************************************/
+
+/* Special rules */
+@import url("stylesForImport.css");
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 10px;
+}
+p {
+	padding: 2ex;
+}
+span {
+	font-weight: bold;
+}
+table span {
+	text-decoration: underline;
+}
+a {
+	color: #f80;
+}
+h1 {
+	font-size: 2em;
+	color: #f80;
+}
+h2 {
+	font-size: 1.8em;
+	color: #888;
+}
+h3 {
+	font-size: 1.6em;
+}
+th {
+	background-color: #f80;
+	color: #fff;
+}
+tr {
+	font-size: .9em;
+	background-color: #eee;
+}
+
+/* Every other row in a table is colored darker grey */
+tr.other {
+	background-color: #ddd;
+}
+
+/* border-color is overridden for each of these separately below */
+.success, .warning, .error {
+	border: 1px solid #aaa;
+	font-weight: bold;
+	padding: .3em;
+	margin: .3em;
+}
+.success {
+	color: #080;
+	background-color: #f0fff0;
+	border-color: #080;
+}
+.warning {
+	color: #880;
+	background-color: #fffff0;
+	border-color: #880;
+}
+.error {
+	color: #800;
+	background-color: #fff0f0;
+	border-color: #800;
+}

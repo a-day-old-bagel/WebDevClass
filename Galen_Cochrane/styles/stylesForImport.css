@@ -1,0 +1,32 @@
+/***************************************
+ * Galen Cochrane
+ * January 27 2018
+ * INFO 2220
+ * Jon Holmes
+ * Assignment 2
+ * Second External Style Sheet
+ * This is imnported by the first css.
+ **************************************/
+
+a:hover {
+	color: #888;
+}
+td:hover {
+	background-color: #000;
+	color: #fff;
+	cursor: cell;
+}
+.success:before, .warning:before, .error:before {
+	content: "Message: ";
+}
+span.special {
+	font-weight: normal;
+	text-transform: uppercase;
+	text-decoration: overline;
+}
+span.special:before {
+	content: open-quote;
+}
+span.special:after {
+	content: close-quote;
+}

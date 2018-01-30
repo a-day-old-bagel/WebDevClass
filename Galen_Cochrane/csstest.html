@@ -1,0 +1,103 @@
+<!-- - - - - - - - - - - - - - - - - - - - -
+Galen Cochrane
+January 27 2018
+INFO 2220
+Jon Holmes
+Assignment 2 – Part I
+Purpose: This is a page to test CSS
+- - - - - - - - - - - - - - - - - - - - - - -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>CSS Test</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="styles/styles.css">
+	<style>
+		body {
+			background-image: url(images/background-ribbon.png);
+			background-repeat: no-repeat;
+			background-color: #fed;
+			margin-left: 100px;
+		}
+		#tab0 {
+			border: 1px solid #000;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- Test Messages -->
+	<div>
+		<div class="success">Test Success</div>
+		<div class="warning">Test Warning</div>
+		<div class="error">Test Error</div>
+	</div>
+
+	<!-- Test Headers -->
+	<div>
+		<h1>Header 1</h1>
+		<h2>Header 2</h2>
+		<h3>Header 3</h3>
+	</div>
+
+	<!-- Test Paragraphs -->
+	<div>
+		<p>
+			This is a
+			<span>
+				test paragraph of text.
+			</span>
+			It has some
+			<span class="special">
+				special spans
+			</span>
+			in it.
+		</p>
+	</div>
+
+	<!-- Test Tables -->
+	<div>
+		<table id="tab0">
+			<tr>
+				<th>Category</th>
+				<th>Most Liked</th>
+				<th>Least Liked</th>
+			</tr>
+			<tr>
+				<td>IDE</td>
+				<td>CLion</td>
+				<td>Visual Studio</td>
+			</tr>
+			<tr class="other">
+				<td>Bagel</td>
+				<td>Everything</td>
+				<td>Raisin</td>
+			</tr>
+			<tr>
+				<td>Climate</td>
+				<td>Temperate Rainforest</td>
+				<td>Arid Scrubland</td>
+			</tr>
+			<tr class="other">
+				<td>Company</td>
+				<td>SpaceX</td>
+				<td>CableOne</td>
+			</tr>
+			<tr>
+				<td>Word</td>
+				<td>Nikhedonia</td>
+				<td>Meal</td>
+			</tr>
+			<tr class="other">
+				<td>Grade</td>
+				<td><span>3</span></td>
+				<td><span>5</span></td>
+			</tr>
+		</table>
+	</div>
+	
+	<a href="index.html">Back to Assignment List</a>
+</body>
+</html>
