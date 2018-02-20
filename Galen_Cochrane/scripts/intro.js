@@ -1,3 +1,13 @@
+/*
+ * Galen Cochrane
+ * Frbruary 2 2018
+ * INFO 2220
+ * Jon Holmes
+ * Assignment 3 - Part I
+ * Purpose: This script is an introduction to JavaScript.
+ * It tests the basics of the language.
+ */
+
 alert("The script in the header has run");
 var loadLast = "I loaded last";
 var numArray;

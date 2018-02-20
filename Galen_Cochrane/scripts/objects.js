@@ -1,3 +1,12 @@
+/*
+ * Galen Cochrane
+ * Frbruary 2 2018
+ * INFO 2220
+ * Jon Holmes
+ * Assignment 4 - Part I
+ * Purpose: This script explores objects in JS.
+ */
+
 function Person(first, last) {
   this.firstName = first;
   this.lastName = last;
