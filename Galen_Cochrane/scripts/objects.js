@@ -71,7 +71,7 @@ function showSteps() {
   if (typeof personHolder !== "undefined") {
     personHolder.stepsToTake = 10;
     var sequenceCount = personHolder.sequenceCount();
-    alert(personHolder.first + " " + personHolder.last + " took steps\n" + sequenceCount);
+    alert(personHolder.firstName + " " + personHolder.lastName + " took steps\n" + sequenceCount);
   } else {
     alert("Object does not exist. Please click the 'Fill Object' button first.");
   }
