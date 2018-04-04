@@ -1,0 +1,110 @@
+[
+	{
+		"title": "HTML and CSS: Design and Build Websites",
+		"isbn": "978-1118008188",
+		"author": {
+			"first": "Jon",
+			"middle": "",
+			"last": "Duckett"
+		},
+		"tags": [
+			"CSS", "Web", "Design", "Programming"
+		]
+	},
+	{
+		"title": "Beginning Programming All-InOne Desk Reference For Dummies",
+		"isbn": "978-0470108543",
+		"author": {
+			"first": "Wallace",
+			"middle": "",
+			"last": "Wang"
+		},
+		"tags": [
+			"Introductory", "Beginning", "Programming", "Languages", "Software"
+		]
+	},
+	{
+		"title": "Beginning C++ Through Game Programming",
+		"isbn": "978-1435457423",
+		"author": {
+			"first": "Michael",
+			"middle": "",
+			"last": "Dawson"
+		},
+		"tags": [
+			"Tutorials", "C++", "Game", "Programming"
+		]
+	},
+	{
+		"title": "Code: The Hidden Language of Computer Hardware and Software",
+		"isbn": "735611319",
+		"author": {
+			"first": "Charles",
+			"middle": "",
+			"last": "Petzold"
+		},
+		"tags": [
+			"Machine Theory", "Business", "Software", "Development"
+		]
+	},
+	{
+		"title": "The Principles of Object-Oriented JavaScript",
+		"isbn": "978-1593275402",
+		"author": {
+			"first": "Nicholas",
+			"middle": "C.",
+			"last": "Zakas"
+		},
+		"tags": [
+			"Object-Oriented", "Software", "Design", "JavaScript"
+		]
+	},
+	{
+		"title": "How Linux Works: What Every Superuser Should Know",
+		"isbn": "978-1593275679",
+		"author": {
+			"first": "Brian",
+			"middle": "",
+			"last": "Ward"
+		},
+		"tags": [
+			"Linux", "UNIX", "Networking", "System Administration", "Operating Systems"
+		]
+	},
+	{
+		"title": "The Psychology of Computer Programming: Silver Anniversary Edition",
+		"isbn": "978-0932633422",
+		"author": {
+			"first": "Gerald",
+			"middle": "M.",
+			"last": "Weinberg"
+		},
+		"tags": [
+			"Programming", "Languages", "Mathematics"
+		]
+	},
+	{
+		"title": "The Mythical Man-Month: Essays on Software Engineering",
+		"isbn": "978-0201835953",
+		"author": {
+			"first": "Frederick",
+			"middle": "P.",
+			"last": "Brooks"
+		},
+		"tags": [
+			"Microprocessors", "Design", "Software", "Engineering", "Development"
+		]
+	},
+	{
+		"title": "Violent Python: A Cookbook for Hackers, Forensic Analysts, Penetration Testers and Security Engineers",
+		"isbn": "978-1597499576",
+		"author": {
+			"first": "TJ",
+			"middle": "",
+			"last": "O’Connor"
+		},
+		"tags": [
+			"Hacking", "Networking", "Security"
+		]
+	}
+]
