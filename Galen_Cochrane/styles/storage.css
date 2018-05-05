@@ -1,0 +1,50 @@
+/***************************************
+ * Galen Cochrane
+ * April 01 2018
+ * INFO 2220
+ * Jon Holmes
+ * Assignment 8
+ * External Style Sheet
+ **************************************/
+
+body {
+	background-color: #222;
+	color: #eee;
+}
+
+input, textarea {
+	background-color: #333;
+	border: 1px solid #555;
+	border-radius: .4em;
+	padding: .2em;
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 1.2em;
+}
+
+
+/*
+ul {
+	list-style-type: none;
+	font-size: 1.5em;
+}
+
+li {
+	border-radius: .5em;
+	margin: 1em;
+}
+
+li.group1 {
+	background-color: #bee;
+}
+li.group2 {
+	background-color: #ebe;
+}
+li.group3 {
+	background-color: #eeb;
+}
+
+li span {
+	margin: 1em;
+}
+*/
