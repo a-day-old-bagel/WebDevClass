@@ -1,17 +1,33 @@
 /***************************************
  * Galen Cochrane
- * April 01 2018
+ * April 18 2018
  * INFO 2220
  * Jon Holmes
- * Assignment 8
- * External Style Sheet
+ * Assignment 9
+ * Extra External Style Sheet for
+ * storage assignment. Yields a
+ * grey/orange minimalist look.
  **************************************/
 
+/* Form and anchor styling */
 body {
 	background-color: #222;
 	color: #eee;
+	font-family: sans-serif;
+	font-size: 1.2em;
 }
-
+h1 {
+	margin: 1em;
+}
+a {
+	font-size: 1em;
+	text-decoration: none;
+	background-color: #333;
+	border: 1px solid #555;
+	border-radius: .4em;
+	padding: .2em;
+	margin: 1em;
+}
 input, textarea {
 	background-color: #333;
 	border: 1px solid #555;
@@ -19,32 +35,93 @@ input, textarea {
 	padding: .2em;
 	color: #fff;
 	font-family: sans-serif;
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
-
-
-/*
-ul {
-	list-style-type: none;
-	font-size: 1.5em;
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus
+{
+	outline: none;
+	border: 1px solid #f80;
+	color: #f80;
+	box-shadow: 0 0 10px;
 }
-
-li {
-	border-radius: .5em;
+fieldset {
+	background-color: #282828;
+	border: 1px solid #555;
+	border-radius: .4em;
+	padding: .2em;
 	margin: 1em;
 }
+fieldset legend, .rdArea, .chkArea {
+	background-color: #333;
+	border: 1px solid #555;
+	border-radius: .4em;
+	padding: .3em;
+}
+button {
+	color: #eee;
+	font-size: 1em;
+	background-color: #333;
+	border: 1px solid #555;
+	border-radius: .4em;
+	padding: .2em;
+}
+button:focus {
+	outline:none;
+}
+a:hover,
+button:hover,
+.rdArea:hover,
+.chkArea:hover,
+input[type="checkbox"] + label:hover,
+input[type="radio"] + label:hover {
+	color: #f80;
+	border-color: #f80;
+}
+.inputWrapper {
+	margin: 1em;
+	display: inline-block;
+}
+.loginFormContainer, .userFormContainer {
+	background-color: #282828;
+	border: 1px solid #555;
+	border-radius: .4em;
+	padding: 1em;
+	margin: 1em;
+	max-width: 450px;
+}
 
+/* List Styling */
+ul {
+	list-style-type: none;
+}
+li {
+	border: 1px solid #555;
+	border-radius: .5em;
+	margin: 1em;
+	display: inline-block;
+}
 li.group1 {
-	background-color: #bee;
+	background-color: #244;
+	padding: .25em;
 }
 li.group2 {
-	background-color: #ebe;
+	background-color: #424;
+	padding: .25em;
 }
 li.group3 {
-	background-color: #eeb;
+	background-color: #442;
+	padding: .25em;
 }
-
 li span {
 	margin: 1em;
 }
-*/
+.nameSpan {
+	padding: .5em;
+	margin: 1em;
+}
+p {
+	padding: .3em;
+	margin: .1em;
+}

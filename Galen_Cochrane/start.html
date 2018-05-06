@@ -1,10 +1,10 @@
 <!-- - - - - - - - - - - - - - - - - - - - -
 Galen Cochrane
-January 17 2018
+April 18 2018
 INFO 2220
 Jon Holmes
-Assignment 1 – Part 3
-Purpose: This page contains a simple form
+Assignment 9
+Purpose: This page explores storage techniques.
 - - - - - - - - - - - - - - - - - - - - - - -->
 
 <!DOCTYPE html>
@@ -15,84 +15,76 @@ Purpose: This page contains a simple form
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="styles/styles.css">
 	<link rel="stylesheet" href="styles/storage.css">
+	<script src="scripts/storage.js"></script>
 </head>
+
 <body>
-	<article>
-		<h1>Web Storage Demo</h1>
+<article>
 
-		<form action="http://teaching.jdholmes.net/postvget/reader/index.php" method="post" id="form">
+	<h1>Web Storage Demo</h1>
 
-			<input type="hidden" name="StudentID" value="860360">
+	<section class="loginFormContainer">
+		<div class="inputWrapper">
+			<label for="userName">Username:</label>
+			<input type="text" name="userName" id="inUserName">
+		</div>
+		<div class="inputWrapper">
+			<label for="password">Password:</label>
+			<input type="password" name="password" id="inPassword">
+		</div>
+		<div class="inputWrapper">
+			<label class="chkArea"><input type="checkbox" name="rememberMe" id="chkRemember">
+				Remember Me
+			</label>
+		</div>
+		<div class="inputWrapper">
+			<button id="btnLogin">Login</button>
+			<button id="btnForget">Forget Me</button>
+		</div>
+	</section>
 
-			<label for="txtFirstName">First Name:</label>
-			<input type="text" name="firstName" id="txtFirstName">
+	<section class="userFormContainer">
+		<div class="inputWrapper">
+			<label for="name">Name:</label>
+			<input type="text" name="name" id="inName">
+		</div>
+		<div class="inputWrapper">
+			<label for="phone">Phone:</label>
+			<input type="text" name="phone" id="inPhone">
+		</div>
+		<div class="inputWrapper">
+			<label for="age">Age:</label>
+			<input type="text" name="age" id="inAge">
+		</div>
+		<fieldset> <legend>Group</legend>
+			<div class="inputWrapper">
+				<label class="rdArea"><input type="radio" name="group" value="1" id="rdGroup1" checked>
+					1
+				</label>
+			</div>
+			<div class="inputWrapper">
+				<label class="rdArea"><input type="radio" name="group" value="2" id="rdGroup1">
+					2
+				</label>
+			</div>
+			<div class="inputWrapper">
+				<label class="rdArea"><input type="radio" name="group" value="3" id="rdGroup1">
+					3
+				</label>
+			</div>
+		</fieldset>
+		<div class="inputWrapper">
+			<button id="btnAddPerson">Add Person</button>
+			<button id="btnClearList">Clear Storage</button>
+		</div>
+	</section>
 
-			<label for="txtLastName">Last Name:</label>
-			<input type="text" name="lastName" id="txtLastName">
+	<section class="storageViewContainer">
+		<a href="view.html">View Storage</a>
+		<ul id="peopleList"></ul> <!-- This list gets filled and managed by storage.js -->
+	</section>
 
-			<label for="txtSecret">Secret Key:</label>
-			<input type="password" name="secret" id="txtSecret">
-
-			<label for="selColor">Favorite Color:</label>
-			<select name="favColor" id="selColor">
-				<option value="Black">Black</option>
-				<option value="White">White</option>
-				<option value="Red" selected>Red</option>
-				<option value="Green">Green</option>
-				<option value="Blue">Blue</option>
-				<option value="Cyan">Cyan</option>
-				<option value="Magenta">Magenta</option>
-				<option value="Yellow">Yellow</option>
-			</select>
-
-			<fieldset> <legend>Day of the Week</legend>
-				<input type="radio" name="dayOfWeek" value="Sunday" id="rdDaySun">
-				<label for="rdDaySun">Sunday</label>
-
-				<input type="radio" name="dayOfWeek" value="Monday" id="rdDayMon">
-				<label for="rdDayMon">Monday</label>
-
-				<input type="radio" name="dayOfWeek" value="Tuesday" id="rdDayTue">
-				<label for="rdDayTue">Tuesday</label>
-
-				<input type="radio" name="dayOfWeek" value="Wednesday" id="rdDayWed">
-				<label for="rdDayWed">Wednesday</label>
-
-				<input type="radio" name="dayOfWeek" value="Thursday" id="rdDayThu">
-				<label for="rdDayThu">Thursday</label>
-
-				<input type="radio" name="dayOfWeek" value="Friday" id="rdDayFri" checked>
-				<label for="rdDayFri">Friday</label>
-
-				<input type="radio" name="dayOfWeek" value="Saturday" id="rdDaySat">
-				<label for="rdDaySat">Saturday</label>
-			</fieldset>
-
-			<fieldset> <legend>Times</legend>
-				<input type="checkbox" name="timeOfDay11" value="11" id="chkTime11">
-				<label for="chkTime11">11:00 AM</label>
-
-				<input type="checkbox" name="timeOfDay12" value="12" id="chkTime12">
-				<label for="chkTime12">12:00 AM</label>
-
-				<input type="checkbox" name="timeOfDay13" value="13" id="chkTime13">
-				<label for="chkTime13">1:00 PM</label>
-
-				<input type="checkbox" name="timeOfDay14" value="14" id="chkTime14">
-				<label for="chkTime14">2:00 PM</label>
-
-				<input type="checkbox" name="timeOfDay15" value="15" id="chkTime15">
-				<label for="chkTime15">3:00 PM</label>
-			</fieldset>
-
-			<label for="txtAreaDesc">Description:</label>
-			<textarea name="description" rows="5" cols="20" id="txtAreaDesc"></textarea>
-
-			<input type="submit" value="Send to Server">
-
-		</form>
-
-	</article>
-	<a href="index.html">Back to Assignment List</a>
+</article>
+<a href="index.html">Back to Assignment List</a>
 </body>
 </html>
